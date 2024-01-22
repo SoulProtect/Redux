@@ -36,6 +36,7 @@ function WeatherApp() {
       .then(cityName => {
         // Chiamata API per i giorni della settimana solo dopo aver ottenuto le condizioni attuali
         fetchForecastWeatherData(cityName);
+
       })
       .catch(error => {
         setError(error.message);
