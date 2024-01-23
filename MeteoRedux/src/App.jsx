@@ -8,7 +8,9 @@ import GiorniDellaSettimana from './components/GiorniDellaSettimana';
 import './App.css';
 
 function WeatherApp() {
+  
   const [city, setCity] = useState('');
+  const [city2, setCity2] = useState('');
   const [weatherData, setWeatherData] = useState(null);
   const [giorniDellaSettimana, setGiorniDellaSettimana] = useState(null);
   const [loading, setLoading] = useState(false);
@@ -18,6 +20,7 @@ function WeatherApp() {
 
   const fetchWeatherData = () => {
     setLoading(true);
+    setCity2(city);
 
     const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}`;
 
@@ -114,7 +117,7 @@ function WeatherApp() {
 
         
         </div>
-        <div className='giorni col-4'>{giorniDellaSettimana && <GiorniDellaSettimana city={city} />}</div>
+        <div className='giorni col-4'>{giorniDellaSettimana && <GiorniDellaSettimana city={city2} />}</div>
         
       </div>
     </>
