@@ -23,11 +23,12 @@ const initialState = {
           ...state,
           likedJobs: [...state.likedJobs, action.payload],
         };
-      case 'DISLIKE_JOB':
-        return {
-          ...state,
-          likedJobs: state.likedJobs.filter(job => job.id !== action.payload.id),
-        };
+        case 'DISLIKE_JOB':
+          return {
+            ...state,
+            likedJobs: state.likedJobs.filter(job => job.company_name !== action.payload.company_name),
+          };
+        
       default:
         return state;
     }

@@ -43,7 +43,7 @@ const MainSearch = () => {
     <Container fluid style={{  backgroundColor: "#f0f0f0" }}>
     <Row>
       {/* Colonna laterale sinistra */}
-      <Col xs={2} style={{ padding: "20px" }}>
+      <Col xs={2} style={{ padding: "20px"}}>
         <video width="100%" height="100%" controls muted autoPlay loop>
           <source src={videoPath} type="video/mp4" />
           Il tuo browser non supporta il tag video.
