@@ -3,16 +3,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900');
 
 body{
-  
+  margin: 0;
+  padding: 0;
   font-family: "Merriweather", serif;
   font-weight: 300;
   font-style: normal;
+  background-color: #f0f0f0;
 }
 .App {
   text-align: center;
   }
 
-
+.myNav{
+  background: rgb(238,149,91);
+background: linear-gradient(90deg, rgba(238,149,91,1) 0%, rgba(237,165,97,1) 69%, rgba(242,189,111,1) 100%);
+  color: antiquewhite;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -53,9 +59,19 @@ a {
   color: black;
 }
 
+.favoriti{
+  text-align: center;
+  padding-top: 20px;
+
+}
+
 .agenziaLavoro{
   color: bisque;
   -webkit-text-stroke-width: 1px;
   -webkit-text-stroke-color: black;
-  text-shadow: 2px 2px 2px #e26a6a;
+  text-shadow: 2px 2px 2px #ec9898;
+}
+
+.Mappa{
+  margin: 10px;
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import Job from './Job';
-import { dislikeJob } from '../redux/jobActions';  // Aggiungi questa linea
+import { dislikeJob } from '../redux/jobActions';  
+import MyNavbar from './Navbar';
 
 
 
@@ -20,7 +21,9 @@ const Favorites = () => {
   
     return (
       <div>
-        <h2>Your Favorite Jobs</h2>
+        <MyNavbar/>
+        <h2 className='favoriti'>Your Favorite Jobs</h2>
+        <hr />
         {likedJobs.map((job) => (
           <div key={job._id}>
             <Job

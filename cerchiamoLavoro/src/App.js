@@ -2,8 +2,9 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
 import MainSearch from "./components/MainSearch";
 import CompanySearchResults from "./components/CompanySearchResults";
-import Favorites from "../src/components/favorites";  // Importa il componente corretto
+import Favorites from "../src/components/favorites";  
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 
 function App() {
   return (
@@ -11,7 +12,9 @@ function App() {
       <Routes>
         <Route path="/" element={<MainSearch />} />
         <Route path="/:company" element={<CompanySearchResults />} />
-        <Route path="/favorites" element={<Favorites />} />  {/* Aggiorna questa riga */}
+        <Route path="/favorites" element={<Favorites />} />  
+        <Route path="/" exact component={MainSearch} />
+        <Route path="/favorites" component={Favorites} />
       </Routes>
     </Router>
   );
