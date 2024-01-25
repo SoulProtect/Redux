@@ -72,6 +72,7 @@ function WeatherApp() {
 
   return (
     <>
+    <h1 className='titolo'>Che tempo fà?</h1>
       <div className="container row">
         <div className="weather col-8">
           <div className="search">
