@@ -72,7 +72,7 @@ function WeatherApp() {
 
   return (
     <>
-    <h1 className='titolo'>Che tempo fà?</h1>
+    
       <div className="container row">
         <div className="weather col-8">
           <div className="search">
@@ -91,7 +91,9 @@ function WeatherApp() {
           {error && <p>Errore: {error}</p>}
 
           {weatherData && (
+            
             <div className="info">
+      
               <img src={getWeatherInfo(weatherData.weather[0].main).image} alt="" />
               <h1>{kelvinToCelsius(weatherData.main.temp).toFixed(1)}°C</h1>
               <h2>{weatherData.name}</h2>
