@@ -17,7 +17,7 @@ body{
 .myNav{
   background: rgb(238,149,91);
 background: linear-gradient(90deg, rgba(238,149,91,1) 0%, rgba(237,165,97,1) 69%, rgba(242,189,111,1) 100%);
-  color: antiquewhite;
+  
 }
 .App-logo {
   height: 40vmin;
@@ -68,8 +68,8 @@ a {
 .agenziaLavoro{
   color: bisque;
   -webkit-text-stroke-width: 1px;
-  -webkit-text-stroke-color: black;
-  text-shadow: 2px 2px 2px #ec9898;
+  /* -webkit-text-stroke-color: black; */ /*bordo nero */
+  /* text-shadow: 2px 2px 2px #ec9898;  */ /* colore ombra */
 }
 
 .Mappa{

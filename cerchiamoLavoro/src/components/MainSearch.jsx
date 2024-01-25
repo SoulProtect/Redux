@@ -43,7 +43,7 @@ const MainSearch = () => {
   return (
     <>
         <MyNavbar/>
-    <Container fluid style={{  backgroundColor: "#f0f0f0" }}>
+    <Container fluid>
     <Row>
       {/* Colonna laterale sinistra */}
       <Col  xs={12} md={2} className="d-none d-md-block" style={{ padding: "20px", paddingTop: "calc(30vh - 200px)"}}>

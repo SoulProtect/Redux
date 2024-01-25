@@ -12,8 +12,9 @@ function MyNavbar() {
         <Navbar.Toggle />
         <Navbar.Collapse className="justify-content-end">
           <Navbar.Text className='Mappa justify-content-space-between'>
-          <Link to="/favorites"className='text-light' style={{marginRight: "10px"}}>View Favorites</Link> 
-          <Link to="/" className='text-light'> Home</Link>
+          <Link to="/" className='text-light'style={{marginRight: "15px"}}> Home</Link>
+          <Link to="/favorites"className='text-light' >View Favorites</Link> 
+          
           </Navbar.Text>
         </Navbar.Collapse>
       </Container>
